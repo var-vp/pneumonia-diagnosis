@@ -26,6 +26,11 @@
 
 # Streamlit try
 from fastai.learner import load_learner
+import pathlib
+import platform
+
+plt = platform.system()
+pathlib.WindowsPath = pathlib.PosixPath
 
 def load_model():
     model_path = 'saved_model/pneumonia_classification_model.pkl'
