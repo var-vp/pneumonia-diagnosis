@@ -68,7 +68,7 @@ def predict_and_display_results(image):
     st.write("Checking if the image is an X-ray...")
 
     # Save uploaded image temporarily
-    img_path = "temp_image.jpg"
+    img_path = f"data/{uploaded_file.name}"
     image.save(img_path)
 
     if is_xray(xray_detector, img_path):
@@ -82,10 +82,11 @@ def predict_and_display_results(image):
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
 if uploaded_file is not None:
-    image = Image.open(uploaded_file)
-    predict_and_display_results(image)
-
-    # st.write("Invalid image file. Please try again.")
+    try:
+        image = Image.open(uploaded_file)
+        predict_and_display_results(image)
+    except:
+        st.write("Invalid image file. Please try again.")
 
 # Restore PosixPath after prediction
 pathlib.PosixPath = temp
