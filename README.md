@@ -20,7 +20,7 @@ Ensure you have the following dependencies installed:
 #### Setup Instructions:
 1. Clone the repository:
    ```
-   git clone https://github.com/your_username/pneumonia-detection.git
+   git clone https://github.com/khurshiduktamov/pneumonia-detection.git
    cd pneumonia-detection
    ```
 2. Install dependencies:
