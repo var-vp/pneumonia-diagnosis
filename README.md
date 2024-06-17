@@ -1,4 +1,4 @@
-# pneumonia-prediction
+# pneumonia-prediction          https://pneumonia-diagnosis.streamlit.app/
 
 ### README for Pneumonia Detection from Chest X-rays
 
