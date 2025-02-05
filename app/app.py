@@ -49,17 +49,17 @@ import pathlib
 st.set_page_config(page_title="X-Ray pneumonia detection")
 
 # Add GitHub link with logo at the top
-st.markdown(
-    """
-    <div style="display: flex; align-items: center;">
-        <h3><a href="https://github.com/khurshiduktamov/pneumonia-diagnosis" target="_blank">
-            <img src="https://img.icons8.com/ios-filled/50/007BFF/github.png" alt="GitHub" style="margin-right: 10px;">Github Repository   
-        </a>
-        </h3>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+# st.markdown(
+#     """
+#     <div style="display: flex; align-items: center;">
+#         <h3><a href="https://github.com/khurshiduktamov/pneumonia-diagnosis" target="_blank">
+#             <img src="https://img.icons8.com/ios-filled/50/007BFF/github.png" alt="GitHub" style="margin-right: 10px;">Github Repository   
+#         </a>
+#         </h3>
+#     </div>
+#     """,
+#     unsafe_allow_html=True
+# )
 
 # Temporary redirect PosixPath to WindowsPath
 temp = pathlib.PosixPath
