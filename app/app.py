@@ -11,26 +11,28 @@ st.set_page_config(
     layout="centered"
 )
 
-# Custom CSS for better UI
+# Custom CSS for black UI
 st.markdown(
     """
     <style>
         .main {
-            background-color: #f5f7fa;
+            background-color: #000000;
+            color: white;
         }
         .stButton>button {
-            background-color: #007BFF;
+            background-color: #1E1E1E;
             color: white;
             font-size: 16px;
             padding: 8px 16px;
             border-radius: 5px;
+            border: 1px solid white;
         }
         .stButton>button:hover {
-            background-color: #0056b3;
+            background-color: #333333;
         }
         .uploadedImage {
             border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
         }
     </style>
     """,
@@ -52,7 +54,7 @@ def load_models():
 st.markdown("""
     # 🩺 Pneumonia Detection from Chest X-rays
     ### Upload a chest X-ray image to get a prediction.
-""")
+""", unsafe_allow_html=True)
 
 # Load models
 model, xray_detector = load_models()
