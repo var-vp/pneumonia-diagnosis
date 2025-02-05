@@ -106,4 +106,4 @@ if uploaded_file is not None:
         st.write("Invalid image file. Please try again.")
 
 # Restore PosixPath after prediction
-pathlib.PosixPath = temp  make the ui better and dont display warnings 
+pathlib.PosixPath = temp  
